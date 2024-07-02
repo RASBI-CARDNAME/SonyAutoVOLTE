@@ -1,7 +1,6 @@
 package act_code;
 
 import common_code.ADB;
-import common_code.EFS;
 import common_code.FASTBOOT;
 
 import static common_code.Misc.*;
@@ -15,8 +14,8 @@ public class Boot_img_install {
         FASTBOOT fs = new FASTBOOT();
 
         //variable
-        String file_path = "";
-        int boot_menu_num = 0;
+        String file_path;
+        int boot_menu_num;
 
         //reboot bootloader
         System.out.println("fastboot로 진입합니다...");
