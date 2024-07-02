@@ -55,6 +55,8 @@ cmake-build-*/
 
 # IntelliJ
 out/
+.idea/
+SonyAutoVOLTE.iml
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -142,5 +144,3 @@ gradle-app.setting
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+iml,java,gradleSonyAutoVOLTE.iml
-.idea\
-SonyAutoVOLTE.iml
