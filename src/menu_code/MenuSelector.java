@@ -7,7 +7,7 @@ import static act_code.Program_Info_Menu.print_program_info;
 import static menu_code.VoLTE_Menu.volte_menu_sel;
 
 public class MenuSelector {
-    public static void menu_sel(int num,String ver) {
+    public static void menu_sel(int num,String ver,String date) {
         //main_code
         if (num == 1) {
             print_device_info();
@@ -16,7 +16,7 @@ public class MenuSelector {
         } else if (num == 3) {
             boot_install();
         } else if (num == 4) {
-            print_program_info(ver);
+            print_program_info(ver,date);
         } else if (num == 5) {
             exit_program();
         }

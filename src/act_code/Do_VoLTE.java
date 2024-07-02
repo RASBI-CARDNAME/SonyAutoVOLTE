@@ -23,13 +23,13 @@ public class Do_VoLTE {
         ///////////////////////////////
         //variable
         ///////////////////////////////
-        String file_path = "";
-        String efstools_folder_path = "";
-        String efsfile_folder_path = "";
+        String file_path;
+        String efstools_folder_path;
+        String efsfile_folder_path;
 
-        int boot_menu_num = 0;
-        int simfix_menu_num = 0;
-        int rebootmenu_num = 0;
+        int boot_menu_num;
+        int simfix_menu_num;
+        int rebootmenu_num;
 
         ///////////////////////////////
         //1. install boot.img
@@ -239,8 +239,8 @@ public class Do_VoLTE {
         EFS efs = new EFS();
 
         //variable
-        String efstools_folder_path = "";
-        String efsfile_folder_path = "";
+        String efstools_folder_path;
+        String efsfile_folder_path;
 
         //EFS file install
         //port re open
