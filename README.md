@@ -17,4 +17,4 @@
 
 ## 사용법
 아래 링크 참조:
-https://cafe.naver.com/x1smart/603145
+https://cafe.naver.com/x1smart/603348
