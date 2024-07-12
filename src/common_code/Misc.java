@@ -15,7 +15,7 @@ public class Misc {
         String temp = "";
 
         //code
-        System.out.println("(계속하려면 엔터를 눌러주세요.)");
+        System.out.println("\n(계속하려면 엔터를 눌러주세요.)");
         try {
             temp = input.nextLine();
             temp = "";

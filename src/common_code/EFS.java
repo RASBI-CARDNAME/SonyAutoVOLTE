@@ -1,3 +1,5 @@
+//EFS 툴 커맨드
+
 package common_code;
 
 import java.io.BufferedReader;
@@ -7,7 +9,7 @@ import java.io.InputStreamReader;
 import static common_code.Misc.enter;
 
 public class EFS {
-    //write file
+    //write file 커맨드
     public void EFS_writefile(String efstools_folder_path, String mcfg_file_path, String target_folder){
         //main_code
         try {
@@ -35,7 +37,7 @@ public class EFS {
         }
     }
 
-    //upload folder EFS
+    //upload folder 커맨드
     public void EFS_upload_folder(String efstools_path, String myEFS_folder){
         try {
             ProcessBuilder processBuilder = new ProcessBuilder(efstools_path,"uploadDirectory","-i",myEFS_folder,"-o","/","-v");

@@ -1,3 +1,5 @@
+//프로그램 종료 코드
+
 package act_code;
 
 import static common_code.Misc.enter;
