@@ -15,11 +15,10 @@ public class MainMenu {
         final int last_menu_num = 5;
 
         //variable
-        int num = 0;
-        boolean status = true;
+        int num;
 
         //main_code
-        while (status) {
+        while (true) {
             //print Menu
             System.out.println("#메뉴 선택#");
             System.out.println("1. 기기 정보");
@@ -35,7 +34,7 @@ public class MainMenu {
                 if (num < first_menu_num || num > last_menu_num) {
                     throw new IllegalArgumentException();
                 } else {
-                    status = false;
+                    break;
                 }
 
             } catch (Exception e) {
@@ -43,12 +42,12 @@ public class MainMenu {
                 System.out.println("잘못된 입력입니다.");
                 enter();
 
-                //reset
+                //에러 방지용
                 num = 0;
             }
         }
 
-        //end loop
+        //루프 탈출
         cls();
         return num;
     }

@@ -1,3 +1,5 @@
+//FASTBOOT 커맨드
+
 package common_code;
 
 import java.io.BufferedReader;
@@ -6,11 +8,11 @@ import java.io.InputStreamReader;
 
 import static common_code.Misc.enter;
 
-//FASTBOOT command
+//FASTBOOT 커맨드 사용
 public class FASTBOOT {
     public void fastboot_command(String command1, String command2, String command3) {
 
-        //command check
+        //커맨드 체크해서 미사용 필드를 null로
         if (command2 != null && command3 == null) {
             command3 = "";
         } else if (command2 == null) {
@@ -39,14 +41,13 @@ public class FASTBOOT {
                 System.out.println(line);
             }
 
-
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
 
     }
 
-    //FASTBOOT REBOOT
+    //FASTBOOT REBOOT => 오류 날까봐 따로 때어냄
     public void fastboot_reboot() {
         //main_code
         try {
@@ -68,7 +69,6 @@ public class FASTBOOT {
             while ((line = result.readLine()) != null) {
                 System.out.println(line);
             }
-
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();

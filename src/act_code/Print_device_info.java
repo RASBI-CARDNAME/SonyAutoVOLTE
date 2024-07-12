@@ -1,3 +1,5 @@
+//기기 정보 출력
+
 package act_code;
 
 import common_code.ADB;
@@ -14,7 +16,7 @@ public class Print_device_info {
         adb.adb_shell_command("getprop ro.product.name");
         System.out.print("핑거프린트 값:");
         adb.adb_shell_command("getprop ro.build.fingerprint");
-        System.out.println("");
+        Battery_check.battery();
 
         enter();
     }

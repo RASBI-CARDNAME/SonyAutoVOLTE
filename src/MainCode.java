@@ -10,16 +10,13 @@ import static menu_code.Warning.warn;
 
 public class MainCode {
     public static void main(String[] args) {
-        //constant
-        final String version_num = "1.1.0";
-        final String version_date = "2024-07-03";
 
-        //warn_message
+        //경고 메시지 출력
         warn();
 
-        //print_menu
+        //메인 메뉴
         while (true) {
-            menu_sel(load_menu(),version_num,version_date);
+            menu_sel(load_menu());
             cls();
         }
     }

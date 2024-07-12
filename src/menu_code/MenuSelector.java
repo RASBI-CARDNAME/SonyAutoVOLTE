@@ -1,3 +1,5 @@
+//메뉴 선택기
+
 package menu_code;
 
 import static act_code.Boot_img_install.boot_install;
@@ -7,8 +9,8 @@ import static act_code.Program_Info_Menu.print_program_info;
 import static menu_code.VoLTE_Menu.volte_menu_sel;
 
 public class MenuSelector {
-    public static void menu_sel(int num,String ver,String date) {
-        //main_code
+    public static void menu_sel(int num) {
+        //메인 코드
         if (num == 1) {
             print_device_info();
         } else if (num == 2) {
@@ -16,7 +18,7 @@ public class MenuSelector {
         } else if (num == 3) {
             boot_install();
         } else if (num == 4) {
-            print_program_info(ver,date);
+            print_program_info();
         } else if (num == 5) {
             exit_program();
         }
