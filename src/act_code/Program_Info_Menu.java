@@ -7,7 +7,7 @@ public class Program_Info_Menu {
         //constant
         final String version_num = "1.2.0";
         final String version_date = "2024-07-12";
-        final String u_log = "1. 코드 최적화 및 가독성 최적화\n2. 프로그램 사용 간편화\n3. 배터리 수명 확인 기능 추가";
+        final String u_log = "1. 코드 최적화 및 가독성 최적화\n2. 배터리 수명 확인 기능 추가";
 
 
         System.out.println("Sony Auto VOLTE");
